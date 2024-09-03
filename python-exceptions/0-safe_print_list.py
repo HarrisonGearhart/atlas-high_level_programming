@@ -7,6 +7,6 @@ def safe_print_list(my_list=[], x=0):
 		except IndexError:
 			break
 		else:
-			count += 1
+			count += x
 		print()
 		return (count)
