@@ -17,6 +17,8 @@ def roman_to_int(roman_string):
 	for x in range(len(roman_string)):
 		if roman_dictionary.get(roman_string[x], 0) == 0:
 			return 0
+		if i != (len(roman_string) - 1):
+			num += roman_dictionary[roman_string[x]] * -1
 		else:
 			num += roman_dictionary[roman_string[x]]
 	return (num)
