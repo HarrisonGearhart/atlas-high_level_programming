@@ -4,11 +4,12 @@ Size must an integer >= 0.
 Raise errors if the user input is invalid
 Returns the current area of the square"""
 
+
 class Square:
     """Square defined by its size
     raises exceptions
     returns the current area"""
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
