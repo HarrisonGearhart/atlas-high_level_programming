@@ -8,4 +8,4 @@
 4
 
 >> add_integer (cat, 2)
-a must be an integer
+TypeError ("a must be an integer")
