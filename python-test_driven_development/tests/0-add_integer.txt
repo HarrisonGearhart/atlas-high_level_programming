@@ -7,5 +7,5 @@
 >>> add_integer (1.2, 3)
 4
 
->> add_integer (cat, 2)
+>>> add_integer (cat, 2)
 TypeError ("a must be an integer")
