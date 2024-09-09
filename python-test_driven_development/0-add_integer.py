@@ -5,13 +5,9 @@ def add_integer(a, b=98):
 	"""if a or b isn't a float or integer, raise error
 	cast floats into ints
 	return a + b"""
-	if a == float:
-		a = int(a)
-	if b == float:
-		b = int(b)
-	if a != int:
+	
+	if type(a) not in [int, float]:
 		raise TypeError("a must be an integer")
-	if b != int:
+	if type(b) not in [int, float]:
 		raise TypeError("b must be an integer")
-	else:
-		return a + b
+	return a + b
