@@ -11,7 +11,7 @@ class Rectangle:
 	if rectangle is deleted, prints Bye Rectangle...
 	"""
 	number_of_instances = 0
-	print_symbol = '#'
+	print_symbol = "#"
 
 	def __init__(self, width=0, height=0):
 		self.width = width
@@ -54,7 +54,7 @@ class Rectangle:
 		rect_str = ''
 		for y in range(self.__height):
 			for x in range(self.__width):
-				rect_str += '#'
+				rect_str += str(self.print_symbol)
 			rect_str += '\n'
 		return rect_str[:-1]
 
