@@ -1,7 +1,7 @@
 #3-say_my_name.txt
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
->>> say_my_name(Harrison, Gearhart)
+>>> say_my_name("Harrison", "Gearhart")
 My name is Harrison Gearhart
 
 >>> say_my_name(6, Mayfield)
