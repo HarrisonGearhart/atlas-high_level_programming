@@ -10,11 +10,14 @@ def matrix_divided(matrix, div):
 	round to 2 decimal places"""
 	if type(matrix) is not list or len(matrix) == 0:
 		raise TypeError("matrix must be a list (list of lists) of integers/floats")
-	if type(row) is not list for row in matrix:
+	for row in matrix:
+		if type(row) is not list:
 		raise TypeError("matrix must be a list (list of lists) of integers/floats")
-	if type(element) is not int or type(element) is not float for element in row:
+	for element in row:
+		if type(element) is not int or type(element) is not float:
 		raise TypeError("matrix must be a list (list of lists) of integers/floats")
-	if len(row) != len(matrix[0]) for row in matrix:
+	for row in matrix:
+		if len(row) != len(matrix[0]):
 		raise TypeError("Each row of the matrix must have the same size")
 	if type(div) is not int or type(div) is not float:
 		raise TypeError("div must be a number")
