@@ -12,7 +12,7 @@ def matrix_divided(matrix, div):
 		raise TypeError("matrix must be a list (list of lists) of integers/floats")
 	size = None
 	for x in matrix:
-		if type(nums) is not list:
+		if type(x) is not list:
 			raise TypeError("matrix must be a matrix (list of lists) of integers")
 		if size is None:
 			size = len(x)
@@ -26,4 +26,3 @@ def matrix_divided(matrix, div):
 		if div == 0:
 			raise ZeroDivisionError("division by zero")
 		return [[round(y / div, 2) for y in x] for x in matrix]
-		
