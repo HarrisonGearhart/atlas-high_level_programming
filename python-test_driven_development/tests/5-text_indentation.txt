@@ -1,0 +1,28 @@
+#5-text_indentation.txt
+>>> text_indentation = __import__('5-text_indentation').5-text_indentation
+
+>>> text_indentation("Hello World.")
+Hello World.
+<BLANKLINE>
+
+>>> text_indentation("     Hello World.")
+Hello World.
+<BLANKLINE>
+
+>>> text_indentation("Hello World.     ")
+Hello World.
+<BLANKLINE>
+
+>>> text_indentation("     Hello World. How are you?    " )
+Hello World.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+
+>>> text_indentation("Age: 25")
+Age:
+<BLANKLINE>
+25
+
+>>> text_indentation("   ")
+
