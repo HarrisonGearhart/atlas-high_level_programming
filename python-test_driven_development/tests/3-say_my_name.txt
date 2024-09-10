@@ -7,5 +7,5 @@ My name is Harrison Gearhart
 >>> say_my_name(6, Mayfield)
 TypeError: first_name must be a string
 
->>>say_my_name(Chad, 85)
+>>> say_my_name(Chad, 85)
 TypeError: last_name must be a string
