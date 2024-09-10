@@ -13,4 +13,4 @@ class TestMaxInteger(unittest.TestCase):
 		self.assertAlmostEqual(max_integer([]), None)
 
 	def test_non_int(self):
-		self.assertAlmostEqual(TypeError, max_integer, True)
+		self.assertRaises(TypeError, max_integer, True)
