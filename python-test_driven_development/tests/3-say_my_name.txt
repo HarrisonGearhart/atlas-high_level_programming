@@ -11,3 +11,7 @@ TypeError: first_name must be a string
 >>> say_my_name("Chad", 85)
 Traceback (most recent call last):
 TypeError: last_name must be a string
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: missing 2 arguments
