@@ -1,12 +1,12 @@
 #1-my_list.txt
->>> my_list = __import__('1-my_list').my_list
+>>> MyList = __import__('1-my_list').MyList
 
->>> my_list.append(1)
->>> my_list
+>>> MyList.append(1)
+>>> MyList
 [1]
 
->>> my_list.append(2)
->>> my_list
+>>> MyList.append(2)
+>>> MyList
 [1,2]
 
 
