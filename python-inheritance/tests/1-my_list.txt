@@ -1,12 +1,10 @@
 #1-my_list.txt
 >>> MyList = __import__('1-my_list').MyList
+>>>my_list = MyList()
 
->>> MyList.append(1)
->>> MyList
-[1]
+>>> print(my_list)
+[]
 
->>> MyList.append(2)
->>> MyList
-[1,2]
-
-
+>>> my_list = MyList([1, 2, 3])
+>>> print(my_list)
+[1, 2, 3]
