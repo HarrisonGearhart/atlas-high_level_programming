@@ -1,0 +1,8 @@
+#7-base_geometry.txt
+
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
