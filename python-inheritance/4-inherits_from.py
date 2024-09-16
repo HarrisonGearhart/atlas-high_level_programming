@@ -7,7 +7,7 @@ def inherits_from(obj, a_class):
     """Checks if object type is a_class
     if so, Returns true if is instance of a class is inherented
     false otherwise"""
-        if type(object) != a_class:
-            return issubclass(type(opject), a_class)
-        else:
-            return False
+    if type(object) != a_class:
+        return issubclass(type(opject), a_class)
+    else:
+        return False
