@@ -17,4 +17,12 @@ class Student:
             for item in attrs:
                 if type(item) is not str:
                     return obj
-    
+
+            d_list = {}
+
+            for x in range(len(attrs)):
+                for y in obj:
+                    if attrs[a] == y:
+                        d_list[y] = obj[y]
+            return d_list
+ 
