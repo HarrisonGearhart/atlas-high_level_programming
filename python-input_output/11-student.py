@@ -7,7 +7,7 @@ class Student:
     method that retrieve dictionary representation of Student
     If attrs is a list of strings
     only attribute names contained in this list must be retrieved
-	method that replaces all attributes of the Student instance:"""
+    method that replaces all attributes of the Student instance:"""
     def __init__(self, first_name, last_name, age):
         self.first_name = first_name
         self.last_name = last_name
@@ -30,6 +30,6 @@ class Student:
 
         return obj
 
-	def reload_from_json(self, json):
-		for attr in json:
-			self.__dict__[attr] = json[attr]
+    def reload_from_json(self, json):
+        for attr in json:
+            self.__dict__[attr] = json[attr]
