@@ -23,7 +23,7 @@ class Student:
 
             for x in range(len(attrs)):
                 for y in obj:
-                    if attrs[a] == y:
+                    if attrs[x] == y:
                         d_list[y] = obj[y]
             return d_list
 
