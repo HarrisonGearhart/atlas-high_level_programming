@@ -6,6 +6,8 @@ from models.base import Base
 class Rectangle(Base):
     """Rectangle Class
     width and height attributes
+    private instances getters and setters for h, w, x, and y
+    type error if value is not a positive integer
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
@@ -20,6 +22,10 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise TypeError("width must be > 0")
         self.__width = value
 
     @property
@@ -28,6 +34,10 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        if type(value) != int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise TypeError("height must be > 0")
         self.__height = value
 
     @property
@@ -36,6 +46,10 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        if type(value) != int:
+            raise TypeError("x must be an integer")
+        if value <= 0:
+            raise TypeError("x must be >= 0")
         self.__x = value
 
     @property
@@ -44,4 +58,8 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        if type(value) != int:
+            raise TypeError("y must be an integer")
+        if value <= 0:
+            raise TypeError("y must be >= 0")
         self.__y = value
