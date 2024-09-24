@@ -2,6 +2,7 @@
 """Base Class Model"""
 import json
 
+
 class Base:
     """Base model for all other classes
     __nb_onjects attribute
