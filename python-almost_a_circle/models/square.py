@@ -7,11 +7,10 @@ class Square(Rectangle):
 	"""Sqaure class inheriting from Rectangle"""
 	def __init__(self, size, x=0, y=0, id=None):
 		super().__init__(size, size, x, y, id)
-		self.__size = size
 
 	@property
 	def size(self):
-		return self.__width
+		return self.width
 
 	@size.setter
 	def size(self, value):
