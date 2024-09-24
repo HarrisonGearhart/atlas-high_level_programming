@@ -8,18 +8,18 @@ class Rectangle(Base):
     width and height attributes
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     @property
     def width(self):
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, width):
         self.__width = width
 
     @property
