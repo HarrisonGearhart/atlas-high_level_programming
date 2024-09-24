@@ -72,5 +72,5 @@ class Rectangle(Base):
         """Prints rectangle with # characters"""
         for width in range(self.width):
             for height in range(self.height):
+                print("#", end="")
                 print(" ", end="")
-                print("#", end="") 
