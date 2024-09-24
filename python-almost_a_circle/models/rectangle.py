@@ -78,7 +78,7 @@ class Rectangle(Base):
         """Return the string repesentation of the Rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute
         1st argument is id attribute
         2nd argument is width attribute
@@ -90,3 +90,6 @@ class Rectangle(Base):
         if args != ():
             self.id, self.width, self.height, self.x, self.y = \
                 args + expect[len(args):len(expect)]
+        elif kwargs:
+            for (key, value) in kwargs.items():
+                setattr(self, key, value)
