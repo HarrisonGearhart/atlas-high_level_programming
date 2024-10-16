@@ -12,5 +12,5 @@ if __name__ == "__main__":
     rows = cursr.fetchall()
     for row in rows:
         print(row)
-        cursr.close()
-        db.close()
+    cursr.close()
+    db.close()
