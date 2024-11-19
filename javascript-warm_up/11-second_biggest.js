@@ -3,7 +3,7 @@
 const { argv } = require('process');
 const args = argv.slice(2);
 let result = 0;
-let final array = [];
+let finalArray = [];
 
 if (args.length > 1) {
     finalArray = [...new Set(args.map((e) -> parseInt(e)).sort((a,b) => b-a))];
