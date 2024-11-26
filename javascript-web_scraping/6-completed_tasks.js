@@ -8,7 +8,7 @@ request(url, (err, response, body) => {
     else {
         const respns = {};
         const json = JSON.parse(body);
-        for (let i = 0; i < json.elngth; i++) {
+        for (let i = 0; i < json.length; i++) {
             if (json[i].completed === true) {
                 if (respns[json[i].userId] === undefined) {
                     respns[json[i].userId] = 0;
